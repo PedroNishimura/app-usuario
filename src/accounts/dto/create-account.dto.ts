@@ -1,10 +1,4 @@
-import {
-  IsString,
-  IsBoolean,
-  IsDate,
-  IsNotEmpty,
-  IsNumber,
-} from 'class-validator';
+import { IsString, IsBoolean, IsNotEmpty, IsNumber } from 'class-validator';
 
 export class CreateAccountDto {
   @IsNotEmpty()
@@ -20,10 +14,4 @@ export class CreateAccountDto {
 
   @IsString()
   bio: string;
-
-  @IsDate()
-  createdAt: Date;
-
-  @IsDate()
-  updatedAt: Date;
 }

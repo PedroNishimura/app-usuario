@@ -19,6 +19,9 @@ export class AccountsRepository {
     return this.prisma.account.findMany({
       where: {
         userId,
+      },
+      include: {
+        relation: true
       }
     })
   }

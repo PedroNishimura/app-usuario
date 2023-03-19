@@ -1,4 +1,6 @@
 import { Injectable } from '@nestjs/common';
+import { NotFoundError } from 'src/common/errors/types/NotFoundError';
+import { UnauthorizedError } from 'src/common/errors/types/UnauthorizedError';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { UsersRepository } from './repositories/users.repository';
